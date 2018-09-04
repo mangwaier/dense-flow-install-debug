@@ -141,7 +141,7 @@ void calcDenseFlowPureGPU(string file_name, int bound, int type, int step, int d
 
     GpuMat d_flow_x, d_flow_y;
 
-    FarnebackOpticalFlow alg_farn;
+    cv::gpu::FarnebackOpticalFlow alg_farn;
     OpticalFlowDual_TVL1_GPU alg_tvl1;
     BroxOpticalFlow alg_brox(0.197f, 50.0f, 0.8f, 10, 77, 10);
 
